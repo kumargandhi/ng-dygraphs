@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import * as Dygraph from 'dygraphs';
 
 @Component({
@@ -6,7 +6,9 @@ import * as Dygraph from 'dygraphs';
   templateUrl: './dygraphs-chart.component.html',
   styleUrls: ['./dygraphs-chart.component.scss'],
 })
-export class DygraphsChartComponent implements OnInit {
+export class DygraphsChartComponent implements OnInit, AfterViewInit {
+
+  @ViewChild('dygraphsChart') dygraphsChart!: ElementRef;
   data = [
     [1, 10, 100],
     [2, 20, 80],
@@ -21,9 +23,11 @@ export class DygraphsChartComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    new Dygraph(
-      document.getElementById('dygraphs-chart'),
+  ngOnInit(): void {}
+
+  ngAfterViewInit() {
+    new Dygraph.default(
+      this.dygraphsChart.nativeElement,
       this.data,
       this.options
     );
