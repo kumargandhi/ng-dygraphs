@@ -1,14 +1,17 @@
 .navbar {
-    background-color: #ccc;
+  background-color: #ccc;
+}
+
+.container-fluid {
+  justify-content: center;
 }
 
 .main-container {
-    display: flex;
-    overflow: hidden;
-  
-    .router-container {
-      width: 100%;
-      min-width: 0;
-    }
+  display: flex;
+  overflow: hidden;
+
+  .router-container {
+    width: 100%;
+    min-width: 0;
   }
-  
+}
