@@ -1,26 +1,30 @@
-# NgDygraphs
+# [Angular](https://angular.io/) application with [dygraphs](https://dygraphs.com/) code samples!
+
+> **Available charts**
+- Line chart
+
+<!-- ![ng-d3js](https://kumargandhi.github.io/assets/ng-d3js/NgD3.png) -->
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
-## Development server
+## Live URL :-
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> [ng-dygraphs](https://ng-dygraphs.netlify.app/)
 
-## Code scaffolding
+**OR your can do the following to run in your local machine**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Scripts
 
-## Build
+Install node modules
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### `npm install`
 
-## Running unit tests
+In the project directory, you can run:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### `npm start`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Runs the app in the development mode.<br>
+Open [http://localhost:4200](http://localhost:4200) to view it in the browser.
 
 ## Further help
 
